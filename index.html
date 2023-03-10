@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="css/portfolio.css" />
+    <!-- GOOGLE FONT LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio Website</title>
+    <!-- FONT AWESOME LINK -->
+    <script
+      src="https://kit.fontawesome.com/acfce6f1e6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/Logo.png" alt="" class="logo" />
+          <ul id="sideMenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Frontend Web Developer</p>
+          <h1>
+            Hi I'm <span>Adetola</span> <br />
+            Oduwole From Nigeria
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Tola</h1>
+            <p>
+              Adetola is a very interesting young man that likes to speak in
+              third person. He's a frontend developer that enjoys programming as
+              much as he enjoys gaming. He likes the challenges that comes with
+              the job which is very promising. He is currently in search of any
+              frontend related jobs, be it full time junior developer or
+              internship. Adetola is fun!!!
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="openTab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="openTab('experience')">
+                Experience
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Frontend Web Development</span><br />Programming Web &
+                  App Interfaces
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2022 - Present</span><br />
+                  Full stack Web Development Training Course at Udemy
+                </li>
+                <li>
+                  <span>August 2022 - October 2022</span><br />
+                  Frontend Web Development Internship at Side Hustle
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SERVICES -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">Tola's Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut
+              suscipit commodi iste illo eligendi. Ipsa vitae deserunt vel
+              quidem facere non molestias natus rem necessitatibus aliquid
+              distinctio quisquam, voluptate quo.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-microchip"></i>
+            <h2>Web Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut
+              suscipit commodi iste illo eligendi. Ipsa vitae deserunt vel
+              quidem facere non molestias natus rem necessitatibus aliquid
+              distinctio quisquam, voluptate quo.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PORTFOLIO -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">Tola's Portfolio</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" alt="" class="game-img" />
+            <div class="layer">
+              <h3>BasketBall Score Counter</h3>
+              <p>
+                This helps to keep count of score when a basketball game is
+                going on
+              </p>
+              <a href=""
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" alt="" />
+            <div class="layer">
+              <h3>DataNexi</h3>
+              <p>
+                This provides easier and better ways to circulate electricity in
+                Nigeria
+              </p>
+              <a href=""
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.jpg" alt="" />
+            <div class="layer">
+              <h3>TinDog</h3>
+              <p>
+                This is dog version of tinder. Bring together dogs of interest
+              </p>
+              <a href=""
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <p class="sub-title">Contact Tola</p>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i> oduwoleadetohlar@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i> +234 81 66 44 5002</p>
+            <div class="social-icons">
+              <a href="https://twitter.com/OAdetohlar"
+                ><i class="fa-brands fa-square-twitter"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/faruq-oduwole-686934246"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://instagram.com/ade_tohlar?igshid=ZDdkNTZiNTM="
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+            <a href="images/my cv.pdf" download class="btn btn-2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="name" name="Name" placeholder="Your Name" required />
+              <input
+                type="name"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn-2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © Adetola. Made with ease by Tola</p>
+      </div>
+    </div>
+
+    <script src="portfolio.js"></script>
+  </body>
+</html>
