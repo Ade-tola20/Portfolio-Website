@@ -232,8 +232,8 @@ nav ul li a:hover::after {
   transition: transform 0.5s;
 }
 
-.game-img {
-  height: 325px;
+.game-img { 
+  height: 360px;
 }
 
 .layer {
@@ -364,7 +364,7 @@ form textarea {
 
 form .btn-2 {
   font-size: 18px;
-  margin-top: 45px;
+  margin-top: 10px;
   cursor: pointer;
 }
 
